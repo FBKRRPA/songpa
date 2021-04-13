@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schedule id="1">
+  <id>92745868256900</id>
+  <name>Schedule</name>
+  <blockJob id="2">
+    <block class="com.kapowtech.scheduler.server.entity.SequentialBlock" id="3">
+      <project id="4"/>
+      <name>Schedule1616980296760</name>
+      <namedBlock>false</namedBlock>
+      <childReference id="5">
+        <child class="concurrentBlock" id="6">
+          <project reference="4"/>
+          <name>Schedule:middleBlock</name>
+          <namedBlock>false</namedBlock>
+        </child>
+        <scopeName>0</scopeName>
+        <enabled>true</enabled>
+        <order>0</order>
+      </childReference>
+    </block>
+    <blockInput>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;InputConfiguration&gt;
+  &lt;usesNewEncryption&gt;true&lt;/usesNewEncryption&gt;
+  &lt;__inputObjects/&gt;
+&lt;/InputConfiguration&gt;</blockInput>
+    <schedule reference="1"/>
+    <active>false</active>
+    <displayNameMap>{}</displayNameMap>
+  </blockJob>
+  <totalRuns>0</totalRuns>
+  <active>false</active>
+  <useEmailNotification>false</useEmailNotification>
+  <emails/>
+  <nextRun id="7">2021-04-13 01:00:00.0 UTC</nextRun>
+  <maxRuntime>-1</maxRuntime>
+  <maxObjectsExtracted>-1</maxObjectsExtracted>
+  <createdBy>admin</createdBy>
+  <modifiedBy>admin</modifiedBy>
+  <cluster id="8">
+    <name>Non Production</name>
+  </cluster>
+  <scheduler class="org.quartz.impl.StdScheduler" id="9">
+    <scheduler/></scheduler>
+  <trigger class="org.quartz.impl.triggers.SimpleTriggerImpl" id="10">
+    <name>92745868256900</name>
+    <start id="11">2021-03-29 01:00:00.0 UTC</start>
+    <interval>3600000</interval>
+    <repeatCount>-1</repeatCount>
+  </trigger>
+  <revisionNumber>f5e63cc8254c8eb9464b2eacf3048d6a9cd2fe7c</revisionNumber>
+  <tasksPriority>MEDIUM</tasksPriority>
+  <tasksTimeout>600000</tasksTimeout>
+  <commitMessage/>
+  <lastModified id="12">2021-04-13 00:13:17.0 UTC</lastModified>
+  <serializationVersion>1</serializationVersion>
+</schedule>
